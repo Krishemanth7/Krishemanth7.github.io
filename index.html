@@ -1,10 +1,1931 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Krishemanth7 Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hemanth K | Finance Operations & Power BI</title>
+
+    <meta name="description"
+          content="Portfolio of Hemanth K - Finance Operations professional with experience in invoice processing, reporting, process documentation and Power BI.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
+
+        :root {
+            --primary: #5427c7;
+            --primary-dark: #351582;
+            --primary-light: #eee9ff;
+            --accent: #7351e8;
+
+            --dark: #17143a;
+            --text: #34324a;
+            --muted: #706d82;
+
+            --background: #faf9ff;
+            --white: #ffffff;
+            --border: #e7e3f4;
+
+            --shadow: 0 15px 45px rgba(61, 42, 130, 0.10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            height: 76px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: "Caveat", cursive;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--dark);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -7px;
+
+            width: 0;
+            height: 2px;
+
+            background: var(--primary);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-button {
+            background: var(--primary);
+            color: white !important;
+
+            padding: 11px 19px;
+            border-radius: 9px;
+
+            box-shadow: 0 8px 20px rgba(84, 39, 199, 0.20);
+        }
+
+        .nav-button::after {
+            display: none;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 670px;
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(circle at 80% 30%, #e7e0ff 0, transparent 28%),
+                radial-gradient(circle at 10% 90%, #f0ecff 0, transparent 28%),
+                var(--white);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            border-radius: 50%;
+
+            background: #eee9ff;
+
+            right: -150px;
+            top: 40px;
+
+            opacity: 0.7;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            align-items: center;
+            gap: 60px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-small {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 1px;
+
+            margin-bottom: 14px;
+        }
+
+        .hero h1 {
+            font-size: clamp(55px, 7vw, 88px);
+            line-height: 0.95;
+            letter-spacing: -3px;
+
+            color: var(--dark);
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero-title {
+            display: inline-block;
+
+            background: var(--primary-light);
+            color: var(--dark);
+
+            padding: 9px 17px;
+            border-radius: 30px;
+
+            font-size: 15px;
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 610px;
+
+            font-size: 17px;
+            color: var(--muted);
+
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 13px 21px;
+
+            border-radius: 9px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: 0.3s;
+        }
+
+        .button-primary {
+            background: var(--primary);
+            color: white;
+
+            box-shadow: 0 10px 25px rgba(84, 39, 199, 0.22);
+        }
+
+        .button-primary:hover {
+            transform: translateY(-3px);
+            background: var(--primary-dark);
+        }
+
+        .button-outline {
+            border: 1px solid #cfc8e7;
+            color: var(--dark);
+            background: white;
+        }
+
+        .button-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .hero-note {
+            margin-top: 25px;
+
+            font-family: "Caveat", cursive;
+            font-size: 23px;
+            font-weight: 600;
+
+            color: var(--dark);
+        }
+
+        .hero-note span {
+            color: var(--primary);
+        }
+
+
+        /* =========================
+           HERO VISUAL
+        ========================= */
+
+        .hero-visual {
+            min-height: 500px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+        }
+
+        .blob {
+            position: absolute;
+
+            width: 390px;
+            height: 390px;
+
+            background: linear-gradient(
+                135deg,
+                #d9ceff,
+                #b9a7ff
+            );
+
+            border-radius: 48% 52% 55% 45% / 50% 45% 55% 50%;
+
+            transform: rotate(-7deg);
+        }
+
+        .profile-placeholder {
+            position: relative;
+            z-index: 2;
+
+            width: 300px;
+            height: 380px;
+
+            border-radius: 150px 150px 35px 35px;
+
+            background: linear-gradient(
+                145deg,
+                #2b2550,
+                #15122e
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+
+            font-size: 20px;
+            font-weight: 700;
+
+            box-shadow: var(--shadow);
+
+            border: 8px solid white;
+        }
+
+        .profile-placeholder small {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            opacity: 0.7;
+            margin-top: 6px;
+        }
+
+        .floating-note {
+            position: absolute;
+            z-index: 5;
+
+            background: white;
+            padding: 16px 20px;
+
+            border-radius: 12px;
+
+            box-shadow: var(--shadow);
+
+            font-family: "Caveat", cursive;
+            font-size: 21px;
+            font-weight: 600;
+
+            color: var(--dark);
+        }
+
+        .note-one {
+            top: 40px;
+            right: 10px;
+            transform: rotate(5deg);
+        }
+
+        .note-two {
+            bottom: 60px;
+            left: 0;
+            transform: rotate(-6deg);
+        }
+
+        .floating-note span {
+            color: var(--primary);
+        }
+
+
+        /* =========================
+           QUICK STATS
+        ========================= */
+
+        .stats {
+            position: relative;
+            z-index: 10;
+
+            margin-top: -65px;
+        }
+
+        .stats-container {
+            background: white;
+
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            box-shadow: var(--shadow);
+
+            display: grid;
+            grid-template-columns: 1.3fr repeat(3, 1fr);
+
+            overflow: hidden;
+        }
+
+        .stat {
+            padding: 30px 25px;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat h3 {
+            font-size: 29px;
+            color: var(--dark);
+            margin-bottom: 3px;
+        }
+
+        .stat p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .stat-intro {
+            padding: 30px;
+        }
+
+        .stat-intro h3 {
+            font-family: "Caveat", cursive;
+            font-size: 30px;
+            color: var(--primary);
+        }
+
+        .stat-intro p {
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 95px 0;
+        }
+
+        .section-heading {
+            margin-bottom: 42px;
+        }
+
+        .section-heading h2 {
+            font-family: "Caveat", cursive;
+            font-size: 45px;
+            line-height: 1;
+
+            color: var(--dark);
+        }
+
+        .section-heading h2 span {
+            color: var(--primary);
+        }
+
+        .section-heading p {
+            margin-top: 9px;
+            color: var(--muted);
+            max-width: 650px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: var(--muted);
+        }
+
+        .about-highlight {
+            background: var(--primary-light);
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            border: 1px solid #ddd5ff;
+        }
+
+        .about-highlight h3 {
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+
+        .about-highlight p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           EXPERIENCE
+        ========================= */
+
+        .experience {
+            background: #f7f5ff;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+            left: 16px;
+            top: 5px;
+            bottom: 5px;
+
+            width: 2px;
+
+            background: #d7cef8;
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding-left: 60px;
+            margin-bottom: 35px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 7px;
+            top: 5px;
+
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+
+            background: var(--primary);
+
+            border: 5px solid #e4ddff;
+        }
+
+        .experience-card {
+            background: white;
+
+            padding: 28px;
+
+            border-radius: 16px;
+
+            border: 1px solid var(--border);
+
+            box-shadow: 0 8px 30px rgba(50, 35, 100, 0.06);
+        }
+
+        .experience-card h3 {
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .company {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .date {
+            display: inline-block;
+
+            margin: 12px 0;
+
+            padding: 5px 10px;
+
+            background: var(--primary-light);
+            color: var(--primary-dark);
+
+            border-radius: 20px;
+
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .experience-card ul {
+            padding-left: 18px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .experience-card li {
+            margin-bottom: 6px;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            background: white;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .skill-card {
+            background: #fcfbff;
+
+            border: 1px solid var(--border);
+
+            padding: 27px 20px;
+
+            border-radius: 16px;
+
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-6px);
+            border-color: #c8bbf2;
+            box-shadow: var(--shadow);
+        }
+
+        .skill-icon {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background: var(--primary-light);
+
+            color: var(--primary);
+
+            font-size: 21px;
+
+            margin-bottom: 15px;
+        }
+
+        .skill-card h3 {
+            color: var(--dark);
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .projects {
+            background: #19153b;
+            color: white;
+        }
+
+        .projects .section-heading h2 {
+            color: white;
+        }
+
+        .projects .section-heading p {
+            color: #bbb6d0;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            background: #242047;
+
+            border: 1px solid #393263;
+
+            border-radius: 17px;
+
+            overflow: hidden;
+
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: #7965d9;
+        }
+
+        .project-visual {
+            height: 190px;
+
+            background:
+                linear-gradient(135deg, #eeeaff, #d9d0ff);
+
+            padding: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: var(--primary-dark);
+
+            font-weight: 800;
+        }
+
+        .dashboard-placeholder {
+            width: 90%;
+            height: 140px;
+
+            background: white;
+
+            border-radius: 9px;
+
+            padding: 15px;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .dashboard-top {
+            display: flex;
+            gap: 7px;
+            margin-bottom: 12px;
+        }
+
+        .mini-box {
+            height: 25px;
+            flex: 1;
+
+            background: #e8e1ff;
+            border-radius: 5px;
+        }
+
+        .chart {
+            height: 65px;
+
+            background:
+                linear-gradient(
+                    150deg,
+                    transparent 48%,
+                    #7351e8 49%,
+                    #7351e8 51%,
+                    transparent 52%
+                );
+
+            border-bottom: 2px solid #ddd6f5;
+        }
+
+        .project-content {
+            padding: 22px;
+        }
+
+        .project-content h3 {
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .project-content p {
+            color: #bbb6d0;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .tag {
+            padding: 5px 9px;
+
+            border-radius: 20px;
+
+            background: #332d59;
+            color: #d9d1ff;
+
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           FUN SECTION
+        ========================= */
+
+        .fun {
+            background: white;
+        }
+
+        .fun-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .fun-card {
+            text-align: center;
+
+            padding: 28px 15px;
+
+            border-radius: 17px;
+
+            border: 1px dashed #d4ccec;
+
+            background: #fcfbff;
+        }
+
+        .fun-card .emoji {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .fun-card h3 {
+            color: var(--dark);
+            font-size: 15px;
+        }
+
+        .fun-card p {
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 5px;
+        }
+
+
+        /* =========================
+           EDUCATION + CONTACT
+        ========================= */
+
+        .bottom-section {
+            background: #f6f3ff;
+        }
+
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .info-card {
+            background: white;
+
+            padding: 32px;
+
+            border-radius: 18px;
+
+            border: 1px solid var(--border);
+        }
+
+        .info-card h3 {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+
+        .info-card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .info-card strong {
+            color: var(--dark);
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #17143a;
+            color: #aaa5c0;
+
+            text-align: center;
+
+            padding: 28px 20px;
+
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                min-height: 430px;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .fun-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .nav-container {
+                height: auto;
+                padding: 17px 0;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+            }
+
+            .hero-visual {
+                transform: scale(0.85);
+            }
+
+            .stats {
+                margin-top: -30px;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+            }
+
+            .stat {
+                border-right: none;
+            }
+
+            .skills-grid,
+            .projects-grid,
+            .fun-grid,
+            .bottom-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .section-heading h2 {
+                font-size: 38px;
+            }
+
+        }
+
+    </style>
 </head>
-<body style="background-color:#141414; color:white; text-align:center; font-family:Arial;">
-  <h1>Welcome to My Portfolio</h1>
-  <p>Coming soon: Power BI dashboards and projects.</p>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            Hemanth<span>.</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact" class="nav-button">Let's Connect ✈</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <div>
+
+            <div class="hero-small">
+                FINANCE OPERATIONS • POWER BI • ANALYTICS
+            </div>
+
+            <h1>
+                Hi, I'm<br>
+                <span>Hemanth K</span>
+            </h1>
+
+            <div class="hero-title">
+                Finance Operations Professional | Power BI Enthusiast 🚀
+            </div>
+
+            <p class="hero-description">
+                I work at the intersection of finance operations, process improvement
+                and data visualization. My experience includes invoice processing,
+                reporting, stakeholder coordination and process documentation,
+                while I continue building my expertise in Power BI and analytics.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="button button-primary">
+                    View My Projects ↗
+                </a>
+
+                <a href="#contact" class="button button-outline">
+                    Download Resume ↓
+                </a>
+
+                <a href="#contact" class="button button-outline">
+                    Contact Me ✉
+                </a>
+
+            </div>
+
+            <div class="hero-note">
+                I speak fluent <span>Excel</span> too. 😎
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="blob"></div>
+
+            <div class="profile-placeholder">
+
+                <div>
+                    Hemanth K
+                    <small>Photo coming soon</small>
+                </div>
+
+            </div>
+
+            <div class="floating-note note-one">
+                Data doesn't lie.<br>
+                <span>Dashboards don't either!</span> 📊
+            </div>
+
+            <div class="floating-note note-two">
+                ☕ Coffee fuels<br>
+                dashboards & dreams.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QUICK STATS
+========================= -->
+
+<div class="stats">
+
+    <div class="container stats-container">
+
+        <div class="stat-intro">
+
+            <h3>At a Glance ✨</h3>
+
+            <p>
+                Finance operations professional with experience in
+                invoice processing, reporting, stakeholder management
+                and process documentation.
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h3>7+</h3>
+
+            <p>
+                Years of Professional Experience
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h3>Power BI</h3>
+
+            <p>
+                Dashboard & Data Visualization
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h3>∞</h3>
+
+            <p>
+                Curiosity for Learning
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                A little <span>about me</span> 👋
+            </h2>
+
+            <p>
+                A quick introduction before we get into the dashboards.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I have 7 years of professional experience across finance
+                    and accounting operations, with a strong focus on
+                    invoice processing and operational support.
+                </p>
+
+                <p>
+                    My experience includes reporting, stakeholder coordination,
+                    process documentation, knowledge management and working
+                    with ERP systems such as SAP and Oracle.
+                </p>
+
+                <p>
+                    Alongside my finance operations experience, I have been
+                    developing my Power BI skills and exploring how dashboards
+                    and data visualization can make business information
+                    easier to understand and act upon.
+                </p>
+
+            </div>
+
+
+            <div class="about-highlight">
+
+                <h3>
+                    What I'm building towards 🚀
+                </h3>
+
+                <p>
+                    Combining my finance operations background with
+                    Power BI and analytics skills to create clear,
+                    useful and business-focused reporting solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section class="experience" id="experience">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                My professional <span>journey</span> ✈
+            </h2>
+
+            <p>
+                A few chapters from my career so far.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <!-- CAPGEMINI -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Process Lead
+                    </h3>
+
+                    <div class="company">
+                        Capgemini Technology Services India Ltd.
+                    </div>
+
+                    <div class="date">
+                        Feb 2022 – Jun 2025
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Worked primarily in Accounts Payable operations
+                            with a focus on invoice processing.
+                        </li>
+
+                        <li>
+                            Maintained Desktop Procedures (DTPs) and
+                            supported process documentation.
+                        </li>
+
+                        <li>
+                            Coordinated with stakeholders and supported
+                            operational requirements.
+                        </li>
+
+                        <li>
+                            Worked with reporting and process-related
+                            information for operational tracking.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACCENTURE -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        General Accounting Operations Associate
+                    </h3>
+
+                    <div class="company">
+                        Accenture
+                    </div>
+
+                    <div class="date">
+                        2019 – 2022
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Worked in accounting operations and
+                            finance-related business processes.
+                        </li>
+
+                        <li>
+                            Supported invoice processing and
+                            operational activities.
+                        </li>
+
+                        <li>
+                            Worked with stakeholders to support
+                            day-to-day process requirements.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DXC -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="experience-card">
+
+                    <h3>
+                        Process Associate
+                    </h3>
+
+                    <div class="company">
+                        DXC Technology
+                    </div>
+
+                    <div class="date">
+                        2018 – 2019
+                    </div>
+
+                    <ul>
+
+                        <li>
+                            Supported business and finance-related
+                            operational processes.
+                        </li>
+
+                        <li>
+                            Worked on process activities and
+                            operational support.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="skills" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Skills & <span>tools</span> 🛠️
+            </h2>
+
+            <p>
+                The things I use, work with and continue to develop.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">▥</div>
+
+                <h3>Analytics</h3>
+
+                <p>
+                    Power BI<br>
+                    Dashboard Development<br>
+                    Data Visualization<br>
+                    Basic DAX
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">₹</div>
+
+                <h3>Finance Operations</h3>
+
+                <p>
+                    Invoice Processing<br>
+                    Accounts Payable<br>
+                    Reconciliations<br>
+                    Reporting
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">▣</div>
+
+                <h3>ERP</h3>
+
+                <p>
+                    SAP<br>
+                    Oracle
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">⚙</div>
+
+                <h3>Process</h3>
+
+                <p>
+                    Process Documentation<br>
+                    DTP Maintenance<br>
+                    UAT Support<br>
+                    Knowledge Management
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Power BI <span>projects</span> 📊
+            </h2>
+
+            <p>
+                This section will showcase my actual Power BI work.
+                More projects will be added as the portfolio grows.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-visual">
+
+                    <div class="dashboard-placeholder">
+
+                        <div class="dashboard-top">
+
+                            <div class="mini-box"></div>
+                            <div class="mini-box"></div>
+                            <div class="mini-box"></div>
+
+                        </div>
+
+                        <div class="chart"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Accounts Payable Dashboard
+                    </h3>
+
+                    <p>
+                        A Power BI project focused on presenting
+                        invoice and Accounts Payable information
+                        through interactive reporting.
+                    </p>
+
+                    <div class="tags">
+
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Dashboard</span>
+                        <span class="tag">DAX</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-visual">
+
+                    <div class="dashboard-placeholder">
+
+                        <div class="dashboard-top">
+
+                            <div class="mini-box"></div>
+                            <div class="mini-box"></div>
+                            <div class="mini-box"></div>
+
+                        </div>
+
+                        <div class="chart"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        Finance Analytics Dashboard
+                    </h3>
+
+                    <p>
+                        A business reporting concept designed
+                        to turn finance-related information into
+                        clear visual insights.
+                    </p>
+
+                    <div class="tags">
+
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Visualization</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-visual">
+
+                    <div class="dashboard-placeholder">
+
+                        <div class="dashboard-top">
+
+                            <div class="mini-box"></div>
+                            <div class="mini-box"></div>
+                            <div class="mini-box"></div>
+
+                        </div>
+
+                        <div class="chart"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <h3>
+                        More Projects Coming Soon
+                    </h3>
+
+                    <p>
+                        New dashboards and analytics projects
+                        will be added here as I build and
+                        refine my Power BI portfolio.
+                    </p>
+
+                    <div class="tags">
+
+                        <span class="tag">Learning</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Building</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FUN SECTION
+========================= -->
+
+<section class="fun">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                A little more about me <span>(the fun part 😄)</span>
+            </h2>
+
+            <p>
+                Because a portfolio doesn't have to read like a spreadsheet.
+            </p>
+
+        </div>
+
+
+        <div class="fun-grid">
+
+
+            <div class="fun-card">
+
+                <div class="emoji">☕</div>
+
+                <h3>
+                    Coffee Lover
+                </h3>
+
+                <p>
+                    Some dashboards run on caffeine.
+                </p>
+
+            </div>
+
+
+            <div class="fun-card">
+
+                <div class="emoji">✈️</div>
+
+                <h3>
+                    Travel
+                </h3>
+
+                <p>
+                    New places, new ideas.
+                </p>
+
+            </div>
+
+
+            <div class="fun-card">
+
+                <div class="emoji">🎮</div>
+
+                <h3>
+                    Gamer Mode
+                </h3>
+
+                <p>
+                    GTA, FIFA & story games.
+                </p>
+
+            </div>
+
+
+            <div class="fun-card">
+
+                <div class="emoji">🎧</div>
+
+                <h3>
+                    Music Vibes
+                </h3>
+
+                <p>
+                    Good music while building reports.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EDUCATION + CONTACT
+========================= -->
+
+<section class="bottom-section" id="education">
+
+    <div class="container">
+
+        <div class="bottom-grid">
+
+
+            <!-- EDUCATION -->
+
+            <div class="info-card">
+
+                <h3>
+                    🎓 Education
+                </h3>
+
+                <p>
+                    <strong>MBA – Finance</strong>
+                </p>
+
+                <p>
+                    Bangalore University
+                </p>
+
+                <p>
+                    2016
+                </p>
+
+                <br>
+
+                <p>
+                    Keep learning. Keep improving. 🚀
+                </p>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="info-card" id="contact">
+
+                <h3>
+                    Let's connect ✨
+                </h3>
+
+                <p>
+                    Interested in discussing opportunities,
+                    Power BI projects or simply exchanging ideas?
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       class="button button-outline">
+                        LinkedIn
+                    </a>
+
+                    <a href="mailto:your-email@example.com"
+                       class="button button-outline">
+                        Email
+                    </a>
+
+                    <a href="https://github.com/Krishemanth7"
+                       target="_blank"
+                       class="button button-outline">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Hemanth K</strong>. Built with curiosity,
+        coffee & a little bit of Power BI. ☕📊
+    </p>
+
+</footer>
+
+
 </body>
 </html>

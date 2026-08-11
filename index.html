@@ -7,10 +7,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hemanth K | Accounts Payable & Power BI</title>
+    <title>Hemanth K | Accounts Payable | Power BI</title>
 
     <meta name="description"
-        content="Portfolio of Hemanth K - Accounts Payable and Finance Operations professional with experience in invoice processing, reporting and Power BI.">
+        content="Portfolio of Hemanth K - Accounts Payable and Finance Operations professional exploring Power BI and analytics.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -25,19 +25,21 @@
     <style>
 
         :root {
-            --primary: #5427c7;
-            --primary-dark: #351582;
+            --primary: #5b35c9;
+            --primary-dark: #392078;
             --primary-light: #eee9ff;
 
             --dark: #17143a;
-            --text: #34324a;
-            --muted: #706d82;
+            --text: #36334a;
+            --muted: #716d82;
 
             --background: #faf9ff;
             --white: #ffffff;
-            --border: #e7e3f4;
 
-            --shadow: 0 15px 45px rgba(61, 42, 130, 0.10);
+            --border: #e5e0f2;
+
+            --shadow:
+                0 18px 50px rgba(60, 40, 130, 0.10);
         }
 
 
@@ -55,21 +57,27 @@
 
         body {
             font-family: "Inter", sans-serif;
+
             background: var(--background);
+
             color: var(--text);
-            line-height: 1.6;
+
+            line-height: 1.7;
         }
 
 
         a {
             text-decoration: none;
+
             color: inherit;
         }
 
 
         .container {
             width: 90%;
+
             max-width: 1180px;
+
             margin: auto;
         }
 
@@ -81,22 +89,28 @@
 
         nav {
             position: sticky;
+
             top: 0;
+
             z-index: 1000;
 
-            background: rgba(255, 255, 255, 0.94);
+            background:
+                rgba(255,255,255,0.94);
 
             backdrop-filter: blur(12px);
 
-            border-bottom: 1px solid var(--border);
+            border-bottom:
+                1px solid var(--border);
         }
 
 
         .nav-container {
-            height: 76px;
+            min-height: 74px;
 
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
         }
 
@@ -105,6 +119,7 @@
             font-family: "Caveat", cursive;
 
             font-size: 32px;
+
             font-weight: 700;
 
             color: var(--dark);
@@ -118,40 +133,24 @@
 
         .nav-links {
             display: flex;
+
             align-items: center;
-            gap: 28px;
+
+            gap: 25px;
         }
 
 
         .nav-links a {
-            font-size: 14px;
+            font-size: 13px;
+
             font-weight: 600;
 
             color: var(--dark);
-
-            position: relative;
         }
 
 
-        .nav-links a::after {
-            content: "";
-
-            position: absolute;
-
-            left: 0;
-            bottom: -7px;
-
-            width: 0;
-            height: 2px;
-
-            background: var(--primary);
-
-            transition: 0.3s;
-        }
-
-
-        .nav-links a:hover::after {
-            width: 100%;
+        .nav-links a:hover {
+            color: var(--primary);
         }
 
 
@@ -160,17 +159,9 @@
 
             color: white !important;
 
-            padding: 11px 19px;
+            padding: 10px 17px;
 
             border-radius: 9px;
-
-            box-shadow:
-                0 8px 20px rgba(84, 39, 199, 0.20);
-        }
-
-
-        .nav-button::after {
-            display: none;
         }
 
 
@@ -180,47 +171,31 @@
         ========================= */
 
         .hero {
-            min-height: 670px;
-
-            position: relative;
-            overflow: hidden;
+            min-height: 650px;
 
             display: flex;
+
             align-items: center;
 
+            position: relative;
+
+            overflow: hidden;
+
             background:
+
                 radial-gradient(
-                    circle at 80% 30%,
-                    #e7e0ff 0,
+                    circle at 85% 25%,
+                    #e5ddff 0,
                     transparent 28%
                 ),
 
                 radial-gradient(
                     circle at 10% 90%,
                     #f0ecff 0,
-                    transparent 28%
+                    transparent 30%
                 ),
 
-                var(--white);
-        }
-
-
-        .hero::before {
-            content: "";
-
-            position: absolute;
-
-            width: 450px;
-            height: 450px;
-
-            border-radius: 50%;
-
-            background: #eee9ff;
-
-            right: -150px;
-            top: 40px;
-
-            opacity: 0.7;
+                white;
         }
 
 
@@ -233,26 +208,25 @@
             align-items: center;
 
             gap: 60px;
-
-            position: relative;
-            z-index: 2;
         }
 
 
         .hero-small {
             color: var(--primary);
 
-            font-size: 14px;
+            font-size: 13px;
+
             font-weight: 800;
 
-            letter-spacing: 1px;
+            letter-spacing: 1.3px;
 
-            margin-bottom: 14px;
+            margin-bottom: 15px;
         }
 
 
         .hero h1 {
-            font-size: clamp(55px, 7vw, 88px);
+            font-size:
+                clamp(55px, 7vw, 88px);
 
             line-height: 0.95;
 
@@ -280,7 +254,8 @@
 
             border-radius: 30px;
 
-            font-size: 15px;
+            font-size: 14px;
+
             font-weight: 700;
 
             margin-bottom: 20px;
@@ -288,9 +263,9 @@
 
 
         .hero-description {
-            max-width: 620px;
+            max-width: 650px;
 
-            font-size: 17px;
+            font-size: 16px;
 
             color: var(--muted);
 
@@ -303,7 +278,7 @@
 
             flex-wrap: wrap;
 
-            gap: 12px;
+            gap: 11px;
         }
 
 
@@ -312,13 +287,13 @@
 
             align-items: center;
 
-            gap: 8px;
+            justify-content: center;
 
-            padding: 13px 21px;
+            padding: 12px 20px;
 
             border-radius: 9px;
 
-            font-size: 14px;
+            font-size: 13px;
 
             font-weight: 700;
 
@@ -332,7 +307,8 @@
             color: white;
 
             box-shadow:
-                0 10px 25px rgba(84, 39, 199, 0.22);
+                0 10px 25px
+                rgba(91,53,201,0.22);
         }
 
 
@@ -344,29 +320,30 @@
 
 
         .button-outline {
-            border: 1px solid #cfc8e7;
+            background: white;
+
+            border:
+                1px solid #cec7e4;
 
             color: var(--dark);
-
-            background: white;
         }
 
 
         .button-outline:hover {
+            transform: translateY(-3px);
+
             border-color: var(--primary);
 
             color: var(--primary);
-
-            transform: translateY(-3px);
         }
 
 
         .hero-note {
-            margin-top: 25px;
+            margin-top: 23px;
 
             font-family: "Caveat", cursive;
 
-            font-size: 23px;
+            font-size: 22px;
 
             font-weight: 600;
 
@@ -381,33 +358,34 @@
 
 
         /* =========================
-           HERO VISUAL
+           PROFILE IMAGE
         ========================= */
 
         .hero-visual {
-            min-height: 500px;
+            min-height: 510px;
+
+            position: relative;
 
             display: flex;
 
-            justify-content: center;
-
             align-items: center;
 
-            position: relative;
+            justify-content: center;
         }
 
 
         .blob {
             position: absolute;
 
-            width: 390px;
-            height: 390px;
+            width: 410px;
+
+            height: 410px;
 
             background:
                 linear-gradient(
                     135deg,
-                    #d9ceff,
-                    #b9a7ff
+                    #d8ceff,
+                    #b6a4ff
                 );
 
             border-radius:
@@ -419,54 +397,28 @@
         }
 
 
-        .profile-placeholder {
+        .profile-image {
             position: relative;
 
             z-index: 2;
 
-            width: 300px;
-            height: 380px;
+            width: 315px;
+
+            height: 405px;
+
+            object-fit: cover;
+
+            object-position: center;
 
             border-radius:
-                150px 150px 35px 35px;
+                160px 160px 35px 35px;
 
-            background:
-                linear-gradient(
-                    145deg,
-                    #2b2550,
-                    #15122e
-                );
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            color: white;
-
-            font-size: 20px;
-
-            font-weight: 700;
-
-            text-align: center;
+            border:
+                8px solid white;
 
             box-shadow: var(--shadow);
 
-            border: 8px solid white;
-        }
-
-
-        .profile-placeholder small {
-            display: block;
-
-            font-size: 12px;
-
-            font-weight: 400;
-
-            opacity: 0.7;
-
-            margin-top: 6px;
+            background: #17143a;
         }
 
 
@@ -477,7 +429,7 @@
 
             background: white;
 
-            padding: 16px 20px;
+            padding: 15px 20px;
 
             border-radius: 12px;
 
@@ -485,18 +437,15 @@
 
             font-family: "Caveat", cursive;
 
-            font-size: 21px;
+            font-size: 20px;
 
             font-weight: 600;
 
             color: var(--dark);
-        }
 
+            top: 45px;
 
-        .note-one {
-            top: 40px;
-
-            right: 10px;
+            right: 5px;
 
             transform: rotate(5deg);
         }
@@ -509,98 +458,30 @@
 
 
         /* =========================
-           QUICK STATS
+           HOME ABOUT
         ========================= */
 
-        .stats {
-            position: relative;
+        .home-about {
+            background: white;
 
-            z-index: 10;
-
-            margin-top: -65px;
+            padding: 90px 0;
         }
 
 
-        .stats-container {
-            background: white;
-
-            border: 1px solid var(--border);
-
-            border-radius: 20px;
-
-            box-shadow: var(--shadow);
-
+        .home-about-grid {
             display: grid;
 
             grid-template-columns:
-                1.3fr repeat(3, 1fr);
+                1.2fr 0.8fr;
 
-            overflow: hidden;
-        }
+            gap: 55px;
 
-
-        .stat {
-            padding: 30px 25px;
-
-            border-right:
-                1px solid var(--border);
-        }
-
-
-        .stat:last-child {
-            border-right: none;
-        }
-
-
-        .stat h3 {
-            font-size: 29px;
-
-            color: var(--dark);
-
-            margin-bottom: 3px;
-        }
-
-
-        .stat p {
-            font-size: 13px;
-
-            color: var(--muted);
-        }
-
-
-        .stat-intro {
-            padding: 30px;
-        }
-
-
-        .stat-intro h3 {
-            font-family: "Caveat", cursive;
-
-            font-size: 30px;
-
-            color: var(--primary);
-        }
-
-
-        .stat-intro p {
-            font-size: 14px;
-
-            color: var(--muted);
-        }
-
-
-
-        /* =========================
-           SECTIONS
-        ========================= */
-
-        section {
-            padding: 95px 0;
+            align-items: center;
         }
 
 
         .section-heading {
-            margin-bottom: 42px;
+            margin-bottom: 38px;
         }
 
 
@@ -625,62 +506,113 @@
 
             color: var(--muted);
 
-            max-width: 700px;
+            max-width: 720px;
         }
 
 
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about {
-            background: white;
-        }
-
-
-        .about-grid {
-            display: grid;
-
-            grid-template-columns:
-                1.2fr 0.8fr;
-
-            gap: 50px;
-
-            align-items: center;
-        }
-
-
-        .about-text p {
-            margin-bottom: 18px;
-
+        .home-about-text p {
             color: var(--muted);
+
+            margin-bottom: 18px;
         }
 
 
-        .about-highlight {
+        .home-about-card {
             background: var(--primary-light);
-
-            padding: 30px;
-
-            border-radius: 20px;
 
             border:
                 1px solid #ddd5ff;
+
+            padding: 32px;
+
+            border-radius: 20px;
         }
 
 
-        .about-highlight h3 {
+        .home-about-card h3 {
             color: var(--dark);
 
             margin-bottom: 12px;
         }
 
 
-        .about-highlight p {
+        .home-about-card p {
             color: var(--muted);
 
             font-size: 14px;
+        }
+
+
+
+        /* =========================
+           QUICK STATS
+        ========================= */
+
+        .stats {
+            position: relative;
+
+            z-index: 10;
+
+            margin-top: -45px;
+
+            margin-bottom: 0;
+        }
+
+
+        .stats-container {
+            display: grid;
+
+            grid-template-columns:
+                1.3fr repeat(3, 1fr);
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 18px;
+
+            box-shadow: var(--shadow);
+
+            overflow: hidden;
+        }
+
+
+        .stat-intro,
+        .stat {
+            padding: 27px 24px;
+
+            border-right:
+                1px solid var(--border);
+        }
+
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+
+        .stat-intro h3 {
+            font-family: "Caveat", cursive;
+
+            font-size: 28px;
+
+            color: var(--primary);
+        }
+
+
+        .stat h3 {
+            font-size: 27px;
+
+            color: var(--dark);
+        }
+
+
+        .stat p,
+        .stat-intro p {
+            color: var(--muted);
+
+            font-size: 12px;
         }
 
 
@@ -691,6 +623,8 @@
 
         .experience {
             background: #f7f5ff;
+
+            padding: 95px 0;
         }
 
 
@@ -721,7 +655,7 @@
 
             padding-left: 60px;
 
-            margin-bottom: 35px;
+            margin-bottom: 32px;
         }
 
 
@@ -730,9 +664,10 @@
 
             left: 7px;
 
-            top: 5px;
+            top: 6px;
 
             width: 20px;
+
             height: 20px;
 
             border-radius: 50%;
@@ -754,14 +689,15 @@
                 1px solid var(--border);
 
             box-shadow:
-                0 8px 30px rgba(50, 35, 100, 0.06);
+                0 8px 30px
+                rgba(50,35,100,0.06);
         }
 
 
         .experience-card h3 {
             color: var(--dark);
 
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
 
@@ -777,7 +713,7 @@
         .date {
             display: inline-block;
 
-            margin: 12px 0;
+            margin: 11px 0;
 
             padding: 5px 10px;
 
@@ -787,7 +723,7 @@
 
             border-radius: 20px;
 
-            font-size: 12px;
+            font-size: 11px;
 
             font-weight: 700;
         }
@@ -814,6 +750,8 @@
 
         .skills {
             background: white;
+
+            padding: 95px 0;
         }
 
 
@@ -828,12 +766,12 @@
 
 
         .skill-card {
+            padding: 27px 20px;
+
             background: #fcfbff;
 
             border:
                 1px solid var(--border);
-
-            padding: 27px 20px;
 
             border-radius: 16px;
 
@@ -842,32 +780,34 @@
 
 
         .skill-card:hover {
-            transform: translateY(-6px);
-
-            border-color: #c8bbf2;
+            transform: translateY(-5px);
 
             box-shadow: var(--shadow);
+
+            border-color: #c8bbf2;
         }
 
 
         .skill-icon {
-            width: 48px;
-            height: 48px;
+            width: 47px;
+
+            height: 47px;
 
             display: flex;
 
             align-items: center;
-            justify-content: center;
 
-            border-radius: 14px;
+            justify-content: center;
 
             background: var(--primary-light);
 
             color: var(--primary);
 
-            font-size: 21px;
+            border-radius: 13px;
 
-            margin-bottom: 15px;
+            font-size: 20px;
+
+            margin-bottom: 14px;
         }
 
 
@@ -881,9 +821,9 @@
 
 
         .skill-card p {
-            font-size: 13px;
-
             color: var(--muted);
+
+            font-size: 13px;
         }
 
 
@@ -892,19 +832,21 @@
            POWER BI JOURNEY
         ========================= */
 
-        .projects {
+        .powerbi-journey {
             background: #19153b;
 
             color: white;
+
+            padding: 95px 0;
         }
 
 
-        .projects .section-heading h2 {
+        .powerbi-journey .section-heading h2 {
             color: white;
         }
 
 
-        .projects .section-heading p {
+        .powerbi-journey .section-heading p {
             color: #bbb6d0;
         }
 
@@ -912,7 +854,7 @@
         .powerbi-story {
             max-width: 900px;
 
-            margin: 0 auto;
+            margin: auto;
         }
 
 
@@ -927,44 +869,105 @@
         }
 
 
-        .powerbi-coming-soon {
-            margin-top: 45px;
+        .powerbi-highlight {
+            margin-top: 35px;
 
-            padding: 35px;
-
-            text-align: center;
+            padding: 28px;
 
             background: #242047;
 
             border:
                 1px solid #393263;
 
+            border-radius: 17px;
+        }
+
+
+        .powerbi-highlight strong {
+            color: white;
+        }
+
+
+
+        /* =========================
+           POWER BI PROJECTS
+        ========================= */
+
+        .projects {
+            background: #f7f5ff;
+
+            padding: 95px 0;
+        }
+
+
+        .project-card {
+            max-width: 750px;
+
+            margin: auto;
+
+            background: white;
+
+            border:
+                1px solid var(--border);
+
             border-radius: 18px;
+
+            overflow: hidden;
+
+            box-shadow: var(--shadow);
+
+            text-align: center;
+        }
+
+
+        .project-visual {
+            padding: 45px 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eee9ff,
+                    #d9d0ff
+                );
         }
 
 
         .coming-soon-icon {
-            font-size: 45px;
+            font-size: 50px;
 
             margin-bottom: 10px;
         }
 
 
-        .powerbi-coming-soon h3 {
-            color: white;
+        .project-visual h3 {
+            color: var(--dark);
 
-            font-size: 24px;
+            font-size: 25px;
 
             margin-bottom: 8px;
         }
 
 
-        .powerbi-coming-soon p {
-            color: #bbb6d0;
+        .project-visual p {
+            max-width: 520px;
+
+            margin: auto;
+
+            color: var(--muted);
 
             font-size: 14px;
+        }
 
-            margin-bottom: 0;
+
+        .project-content {
+            padding: 27px;
+        }
+
+
+        .project-content p {
+            color: var(--muted);
+
+            font-size: 14px;
         }
 
 
@@ -974,42 +977,43 @@
         ========================= */
 
         .education {
-            background: #f6f3ff;
+            background: white;
+
+            padding: 95px 0;
         }
 
 
         .education-card {
-            background: white;
-
             max-width: 750px;
 
             margin: auto;
 
             padding: 35px;
 
-            border-radius: 20px;
+            background: #fcfbff;
 
             border:
                 1px solid var(--border);
 
+            border-radius: 20px;
+
             box-shadow:
-                0 10px 35px rgba(50, 35, 100, 0.06);
+                0 10px 35px
+                rgba(50,35,100,0.06);
         }
 
 
         .education-card h3 {
             color: var(--dark);
 
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
 
 
-        .education-card .degree {
+        .degree {
             color: var(--primary);
 
             font-weight: 700;
-
-            margin-bottom: 5px;
         }
 
 
@@ -1026,9 +1030,11 @@
         ========================= */
 
         .contact {
-            background: white;
+            background: #f7f5ff;
 
             text-align: center;
+
+            padding: 95px 0;
         }
 
 
@@ -1053,17 +1059,19 @@
 
             flex-wrap: wrap;
 
-            gap: 10px;
+            gap: 11px;
         }
 
 
 
         /* =========================
-           A LITTLE MORE ABOUT ME
+           PERSONAL ABOUT
         ========================= */
 
         .personal {
-            background: #f7f5ff;
+            background: white;
+
+            padding: 95px 0;
         }
 
 
@@ -1071,18 +1079,18 @@
             max-width: 850px;
 
             margin:
-                -15px auto 45px;
+                -10px auto 45px;
 
             text-align: center;
         }
 
 
         .personal-intro p {
+            color: var(--muted);
+
             font-size: 17px;
 
-            line-height: 1.8;
-
-            color: var(--muted);
+            line-height: 1.85;
         }
 
 
@@ -1097,16 +1105,16 @@
 
 
         .fun-card {
-            text-align: center;
-
             padding: 30px 17px;
 
-            border-radius: 17px;
+            text-align: center;
+
+            background: #fcfbff;
 
             border:
                 1px dashed #d4ccec;
 
-            background: white;
+            border-radius: 17px;
 
             transition: 0.3s;
         }
@@ -1124,7 +1132,7 @@
         .fun-card .emoji {
             font-size: 36px;
 
-            margin-bottom: 12px;
+            margin-bottom: 11px;
         }
 
 
@@ -1138,9 +1146,9 @@
 
 
         .fun-card p {
-            font-size: 13px;
-
             color: var(--muted);
+
+            font-size: 13px;
         }
 
 
@@ -1150,13 +1158,13 @@
         ========================= */
 
         footer {
+            padding: 28px 20px;
+
             background: #17143a;
 
             color: #aaa5c0;
 
             text-align: center;
-
-            padding: 28px 20px;
 
             font-size: 13px;
         }
@@ -1175,7 +1183,7 @@
         @media (max-width: 1000px) {
 
             .nav-links {
-                gap: 15px;
+                gap: 14px;
             }
 
 
@@ -1198,24 +1206,7 @@
             }
 
 
-            .hero-visual {
-                min-height: 430px;
-            }
-
-
-            .stats-container {
-                grid-template-columns:
-                    1fr 1fr;
-            }
-
-
-            .stat {
-                border-bottom:
-                    1px solid var(--border);
-            }
-
-
-            .about-grid {
+            .home-about-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1231,6 +1222,12 @@
                     repeat(3, 1fr);
             }
 
+
+            .stats-container {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
         }
 
 
@@ -1238,13 +1235,11 @@
         @media (max-width: 700px) {
 
             .nav-container {
-                height: auto;
-
-                padding: 17px 0;
-
                 flex-direction: column;
 
-                gap: 12px;
+                padding: 15px 0;
+
+                gap: 10px;
             }
 
 
@@ -1256,7 +1251,7 @@
 
 
             .nav-links a {
-                font-size: 12px;
+                font-size: 11px;
             }
 
 
@@ -1271,12 +1266,12 @@
 
 
             .hero-visual {
-                transform: scale(0.85);
+                min-height: 430px;
             }
 
 
             .stats {
-                margin-top: -30px;
+                margin-top: -25px;
             }
 
 
@@ -1285,8 +1280,12 @@
             }
 
 
+            .stat-intro,
             .stat {
                 border-right: none;
+
+                border-bottom:
+                    1px solid var(--border);
             }
 
 
@@ -1297,13 +1296,21 @@
             }
 
 
-            section {
+            section,
+            .experience,
+            .skills,
+            .powerbi-journey,
+            .projects,
+            .education,
+            .contact,
+            .personal,
+            .home-about {
                 padding: 70px 0;
             }
 
 
             .section-heading h2 {
-                font-size: 38px;
+                font-size: 39px;
             }
 
         }
@@ -1323,17 +1330,17 @@
             }
 
 
-            .profile-placeholder {
-                width: 260px;
+            .profile-image {
+                width: 275px;
 
-                height: 340px;
+                height: 355px;
             }
 
 
             .blob {
-                width: 340px;
+                width: 350px;
 
-                height: 340px;
+                height: 350px;
             }
 
 
@@ -1350,8 +1357,8 @@
 </head>
 
 
-
 <body>
+
 
 
 <!-- =========================
@@ -1369,17 +1376,25 @@
 
         <div class="nav-links">
 
-            <a href="#home">Home</a>
+            <a href="#home">
+                Home
+            </a>
 
-            <a href="#about">About</a>
+            <a href="#experience">
+                Experience
+            </a>
 
-            <a href="#experience">Experience</a>
+            <a href="#skills">
+                Skills
+            </a>
 
-            <a href="#skills">Skills</a>
+            <a href="#powerbi">
+                Power BI
+            </a>
 
-            <a href="#projects">Power BI</a>
-
-            <a href="#education">Education</a>
+            <a href="#education">
+                Education
+            </a>
 
             <a href="#contact" class="nav-button">
                 Let's Connect
@@ -1394,7 +1409,7 @@
 
 
 <!-- =========================
-     HERO
+     HOME / HERO
 ========================= -->
 
 <section class="hero" id="home">
@@ -1430,9 +1445,9 @@
 
             <div class="hero-buttons">
 
-                <a href="#projects"
+                <a href="#powerbi"
                     class="button button-primary">
-                    View My Work ↗
+                    Explore My Journey ↗
                 </a>
 
 
@@ -1451,7 +1466,8 @@
 
 
             <div class="hero-note">
-                Turning experience into <span>something more.</span>
+                Turning experience into
+                <span>something more.</span>
             </div>
 
         </div>
@@ -1463,22 +1479,14 @@
             <div class="blob"></div>
 
 
-            <div class="profile-placeholder">
-
-                <div>
-
-                    Hemanth K
-
-                    <small>
-                        Photo coming soon
-                    </small>
-
-                </div>
-
-            </div>
+            <img
+                src="profile.jpg"
+                alt="Hemanth K"
+                class="profile-image"
+            >
 
 
-            <div class="floating-note note-one">
+            <div class="floating-note">
 
                 Data doesn't lie.<br>
 
@@ -1564,10 +1572,11 @@
 
 
 <!-- =========================
-     ABOUT
+     PROFESSIONAL ABOUT
+     PART OF HOME
 ========================= -->
 
-<section class="about" id="about">
+<section class="home-about">
 
     <div class="container">
 
@@ -1585,10 +1594,10 @@
         </div>
 
 
-        <div class="about-grid">
+        <div class="home-about-grid">
 
 
-            <div class="about-text">
+            <div class="home-about-text">
 
                 <p>
                     I have 7 years of professional experience across
@@ -1616,7 +1625,7 @@
             </div>
 
 
-            <div class="about-highlight">
+            <div class="home-about-card">
 
                 <h3>
                     Where I'm heading 🚀
@@ -1625,8 +1634,8 @@
 
                 <p>
                     Combining my finance operations background with
-                    Power BI and analytics to create clear,
-                    useful and business-focused reporting solutions.
+                    Power BI and analytics to create clear, useful
+                    and business-focused reporting solutions.
                 </p>
 
             </div>
@@ -1665,8 +1674,6 @@
         <div class="timeline">
 
 
-            <!-- CAPGEMINI -->
-
             <div class="timeline-item">
 
                 <div class="timeline-dot"></div>
@@ -1696,24 +1703,20 @@
                             operations with a focus on invoice processing.
                         </li>
 
-
                         <li>
                             Maintained Desktop Procedures (DTPs)
                             and supported process documentation.
                         </li>
-
 
                         <li>
                             Supported VIM exception handling
                             within SAP-related processes.
                         </li>
 
-
                         <li>
-                            Participated in UAT activities and
-                            knowledge transfer activities.
+                            Participated in UAT and knowledge
+                            transfer activities.
                         </li>
-
 
                         <li>
                             Coordinated with stakeholders and
@@ -1727,8 +1730,6 @@
             </div>
 
 
-
-            <!-- ACCENTURE -->
 
             <div class="timeline-item">
 
@@ -1759,12 +1760,10 @@
                             finance-related business processes.
                         </li>
 
-
                         <li>
                             Supported invoice processing and
                             operational activities.
                         </li>
-
 
                         <li>
                             Worked with stakeholders to support
@@ -1778,8 +1777,6 @@
             </div>
 
 
-
-            <!-- DXC -->
 
             <div class="timeline-item">
 
@@ -1809,7 +1806,6 @@
                             Supported business and finance-related
                             operational processes.
                         </li>
-
 
                         <li>
                             Worked on process activities and
@@ -1957,7 +1953,7 @@
      POWER BI JOURNEY
 ========================= -->
 
-<section class="projects" id="projects">
+<section class="powerbi-journey" id="powerbi">
 
     <div class="container">
 
@@ -2022,7 +2018,55 @@
             </p>
 
 
-            <div class="powerbi-coming-soon">
+            <div class="powerbi-highlight">
+
+                <strong>
+                    And this is where the next chapter begins. 🚀
+                </strong>
+
+                <br><br>
+
+                I'm continuing to build my Power BI skills,
+                with practical projects and dashboards coming next.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     POWER BI PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <h2>
+                Power BI <span>projects</span> 📊
+            </h2>
+
+
+            <p>
+                This section will grow as I build and add
+                my Power BI projects.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+
+            <div class="project-visual">
 
                 <div class="coming-soon-icon">
                     📊
@@ -2036,7 +2080,19 @@
 
                 <p>
                     I'm currently building my Power BI portfolio.
-                    Real dashboards and projects will be added here soon.
+                    Real dashboards, reports and case studies
+                    will be added here.
+                </p>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <p>
+                    For now, this space is intentionally kept simple.
+                    Once the projects are ready, we'll turn this into
+                    an interactive portfolio of dashboards.
                 </p>
 
             </div>
@@ -2073,7 +2129,6 @@
 
 
         <div class="education-card">
-
 
             <h3>
                 MBA – Finance
@@ -2125,30 +2180,23 @@
 
             <div class="contact-buttons">
 
-
                 <a href="https://www.linkedin.com/"
                     target="_blank"
                     class="button button-primary">
-
                     LinkedIn
-
                 </a>
 
 
                 <a href="mailto:your-email@example.com"
                     class="button button-outline">
-
                     Email
-
                 </a>
 
 
                 <a href="https://github.com/Krishemanth7"
                     target="_blank"
                     class="button button-outline">
-
                     GitHub
-
                 </a>
 
             </div>
@@ -2162,7 +2210,7 @@
 
 
 <!-- =========================
-     A LITTLE MORE ABOUT ME
+     PERSONAL ABOUT
 ========================= -->
 
 <section class="personal" id="personal">
@@ -2208,11 +2256,9 @@
                     ✈️
                 </div>
 
-
                 <h3>
                     Travelling
                 </h3>
-
 
                 <p>
                     Always up for a new place,
@@ -2229,11 +2275,9 @@
                     👨‍🍳
                 </div>
 
-
                 <h3>
                     Cooking
                 </h3>
-
 
                 <p>
                     My kitchen is basically my experiment lab.
@@ -2250,11 +2294,9 @@
                     🍔
                 </div>
 
-
                 <h3>
                     Food
                 </h3>
-
 
                 <p>
                     Healthy choices... mostly.
@@ -2271,11 +2313,9 @@
                     🎮
                 </div>
 
-
                 <h3>
                     Gaming
                 </h3>
-
 
                 <p>
                     Occasional gamer mode:
@@ -2292,11 +2332,9 @@
                     💪
                 </div>
 
-
                 <h3>
                     Fitness
                 </h3>
-
 
                 <p>
                     Currently under construction.
